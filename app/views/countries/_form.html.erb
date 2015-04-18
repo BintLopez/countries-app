@@ -33,7 +33,8 @@
   </div>
   <div class="field">
     <%= f.label :flag%><br>
-    <%= f.text_field :flag%>
+    <%= f.hidden_field(:flag_cache) %>
+    <%= f.file_field(:flag)%>
   </div>
   <div class="actions">
     <%= f.submit %>
