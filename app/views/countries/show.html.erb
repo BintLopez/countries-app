@@ -1,9 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Name:</strong>
-  <%= @country.name %>
+  <strong><%= @country.name %></strong>
 </p>
+<ul>
+	<li>Population: <%= @country.population %></li>
+  	<li>Language: <%= @country.language %></li>
+  	<li>Region: <%= @country.region %></li>
+  	<li>Type of government: <%= @country.gov_type %></li>
+</ul>
 
 <%= link_to 'Edit', edit_country_path(@country) %> |
 <%= link_to 'Back', countries_path %>
