@@ -39,6 +39,9 @@ gem 'carrierwave'
 # Adding cloudinary
 gem 'cloudinary'
 
+# adding pry for debuggin
+gem 'pry'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

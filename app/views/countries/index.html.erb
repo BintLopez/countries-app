@@ -15,7 +15,7 @@
     <% @countries.each do |country| %>
       <tr>
         <td><b><%= country.name %></b></td>
-        <td><%= image_tag(country.flag(:thumb)) unless country.flag_url(:thumb).blank? %></td>
+        <td><%= image_tag(country.flag_url(:thumb)) unless country.flag_url(:thumb).blank? %></td>
         <td><%= country.population%></td>
         <td><%= link_to 'Show', country %></td>
         <td><%= link_to 'Edit', edit_country_path(country) %></td>
