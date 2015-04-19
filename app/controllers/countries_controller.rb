@@ -4,7 +4,11 @@ class CountriesController < ApplicationController
   # GET /countries
   # GET /countries.json
   def index
-    @countries = Country.all
+    if params[:sort_by]
+      @countries = Country.all.sort_by{|c| c.send(params[:sort_by]) }
+   else
+      @countries = Country.all
+    end
   end
 
   # GET /countries/1
