@@ -1,3 +1,4 @@
+<div class="container">
 <p id="notice"><%= notice %></p>
 
 <h1>Countries</h1>
@@ -25,7 +26,7 @@
         <td><%= country.population%></td>
         <td class="btn"><%= link_to 'Show', country %></td>
         <td class="btn"><%= link_to 'Edit', edit_country_path(country) %></td>
-        <td class="btn"><%= link_to 'Destroy', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="btn"><%= link_to 'Delete', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,3 +35,4 @@
 <br>
 
 <%= link_to 'New Country', new_country_path, :class => "btn btn-default" %>
+</div>
