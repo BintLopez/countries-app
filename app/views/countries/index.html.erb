@@ -24,6 +24,7 @@
         <td><%= image_tag(country.flag_url(:thumb), :class => "flagPic") unless country.flag_url(:thumb).blank? %></td>
         <td><b><%= country.name %></b></td>
         <td><%= country.population%></td>
+        <td><%= country.hiphop%></td>
         <td class="btn"><%= link_to 'Show', country %></td>
         <td class="btn"><%= link_to 'Edit', edit_country_path(country) %></td>
         <td class="btn"><%= link_to 'Delete', country, method: :delete, data: { confirm: 'Are you sure?' } %></td>
