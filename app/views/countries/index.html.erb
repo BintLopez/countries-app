@@ -1,4 +1,4 @@
-<div class="container">
+
 <p id="notice"><%= notice %></p>
 
 <h1>Countries</h1>
@@ -24,6 +24,7 @@
         <td><%= image_tag(country.flag_url(:thumb), :class => "flagPic") unless country.flag_url(:thumb).blank? %></td>
         <td><b><%= country.name %></b></td>
         <td><%= country.population %></td>
+        <td><%= country.hiphop %></td>
         
         <td class="btn"><%= link_to 'Show', country %></td>
         <td class="btn"><%= link_to 'Edit', edit_country_path(country) %></td>
@@ -36,4 +37,4 @@
 <br>
 
 <%= link_to 'New Country', new_country_path, :class => "btn btn-default" %>
-</div>
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150418185025) do
+ActiveRecord::Schema.define(version: 20150424061744) do
 
   create_table "countries", force: :cascade do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20150418185025) do
     t.string   "gov_type"
     t.string   "flag"
     t.integer  "population"
+    t.string   "hiphop"
   end
 
 end
